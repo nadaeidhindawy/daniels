@@ -1,0 +1,537 @@
+ html {
+     scroll-behavior: smooth;
+     scroll-padding-top: 10px;
+ }
+
+
+ nav {
+     background-color: #000000;
+     z-index: 4;
+
+     .nav-link {
+         color: #000;
+         padding: 0;
+         font-size: 14px;
+     }
+
+     .nav-item .active {
+         position: relative;
+     }
+
+     .nav-link::after {
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: -4px;
+         width: 0%;
+         height: 2px;
+         background-color: #ffffff;
+         transition: width 0.5s;
+     }
+
+     .nav-link.active::after {
+         width: 100%;
+     }
+
+     .navbar-expand-md .navbar-nav .nav-link {
+         padding: 0;
+     }
+
+ }
+
+
+
+
+ #home {
+     position: relative;
+     Background-image: linear-gradient(to right, #00000093, #00000093), url(../img/bg.jpg);
+     height: 100vh;
+     background-size: cover;
+     background-position: center center;
+     background-attachment: fixed;
+     position: relative;
+
+
+     h5 {
+         font-size: 50px;
+         text-align: center;
+     }
+
+     h1 {
+         font-size: 60px;
+     }
+
+ }
+
+ .icon {
+     width: 30px;
+     height: 30px;
+     background-color: rgba(0, 0, 0, 0.637);
+     font-size: 12px;
+ }
+
+ /* ----------------------------------------------about----------------------------------------- */
+ #about {
+
+
+
+     .text-me {
+         position: relative;
+         z-index: 1;
+     }
+
+     .dote1 {
+         background-image: url(../img/dots.png);
+         width: 19%;
+         height: 20px;
+         position: absolute;
+         right: 78%;
+         bottom: -10px;
+         z-index: -1;
+     }
+
+     h3 {
+         font-size: 50px;
+     }
+
+     .dots {
+         background-image: url(../img/dots.png);
+         width: 90%;
+         height: 100%;
+         background-repeat: repeat;
+         z-index: -1;
+     }
+
+
+     .space {
+         letter-spacing: 3px;
+         margin-bottom: 20px;
+     }
+
+     .progress-container {
+         padding: 0 5%;
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .shadow3 {
+         box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+     }
+
+     .butto-me {
+         background-color: black;
+         color: white;
+     }
+
+     .butto-me:hover {
+         background-color: white;
+         color: black;
+     }
+
+     .button-me {
+         background-color: white;
+         color: black;
+     }
+
+     .button-me:hover {
+         background-color: black;
+         color: white;
+     }
+
+ }
+
+
+ /* ----------------------------------------------services-------------------------------------- */
+ #services {
+
+     background-color: #f7f7f7;
+
+
+     .text-me {
+         position: relative;
+         z-index: 1;
+     }
+
+     .dote {
+         background-image: url(../img/dots.png);
+         width: 19%;
+         height: 20px;
+         position: absolute;
+         right: 41%;
+         bottom: 47px;
+         z-index: -1;
+     }
+
+     h3 {
+         font-size: 45px;
+     }
+
+     .icon3 {
+         width: 60px;
+         height: 60px;
+         background-color: rgba(0, 0, 0, 0.071);
+     }
+
+     .icon3:hover {
+         width: 60px;
+         height: 60px;
+         background-color: rgb(0, 0, 0);
+         color: white;
+     }
+
+     .hover-mee:hover .icon3 {
+         width: 60px;
+         height: 60px;
+         background-color: rgb(0, 0, 0);
+         color: white;
+         transition: all 0.5s;
+     }
+ }
+
+ /* ---------------------------------------------protfolio-------------------------------------- */
+ #Portfolio {
+     .nav-pills .nav-link.active {
+         background-color: transparent;
+     }
+
+     .nav-pills .nav-link {
+         color: black;
+         font-size: 17px;
+         font-weight: 800;
+     }
+
+     .nav-link {
+         color: #000;
+         padding: 0;
+         font-size: 14px;
+     }
+
+     .nav-item .active {
+         position: relative;
+     }
+
+     .nav-link::after {
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: -4px;
+         width: 0%;
+         height: 3px;
+         background-color: #060606;
+         transition: width 0.5s;
+     }
+
+     .nav-link.active::after {
+         width: 100%;
+     }
+
+     .navbar-expand-md .navbar-nav .nav-link {
+         padding: 0;
+     }
+
+     .text-me {
+         position: relative;
+         z-index: 1;
+     }
+
+     .dote {
+         background-image: url(../img/dots.png);
+         width: 19%;
+         height: 20px;
+         position: absolute;
+         right: 41%;
+         bottom: 47px;
+         z-index: -1;
+     }
+
+     h3 {
+         font-size: 45px;
+     }
+
+     .over-me {
+         background-color: rgb(255, 255, 255);
+         opacity: 0;
+         position: absolute;
+         top: 7px;
+         right: 19px;
+         left: 19px;
+         bottom: 7px;
+         transition: all 0.5s;
+     }
+
+     h6 {
+         letter-spacing: 2px;
+         padding-bottom: 30px;
+         transition: all .5s;
+     }
+
+     .over-me1:hover h6 {
+         padding: 0;
+
+     }
+
+     .over-me1:hover .over-me {
+         opacity: 0.9;
+         bottom: 6px;
+
+
+     }
+
+     .icon5 {
+         width: 30px;
+         height: 30px;
+         background-color: rgb(0, 0, 0);
+         color: white;
+         transition: all .3s;
+
+     }
+
+     .icon5:hover {
+         width: 30px;
+         height: 30px;
+         background-color: white;
+         color: black;
+         border: 1px solid black;
+
+     }
+
+     li {
+         padding: 5px;
+     }
+ }
+
+ /* -------------------------------------------testimonials-------------------------------------- */
+ #Testimonials {
+     background: #f7f7f7;
+
+     .text-me {
+         position: relative;
+         z-index: 1;
+     }
+
+     .dote {
+         background-image: url(../img/dots.png);
+         width: 19%;
+         height: 20px;
+         position: absolute;
+         right: 41%;
+         bottom: 47px;
+         z-index: -1;
+     }
+
+     h3 {
+         font-size: 45px;
+     }
+
+     .image-me {
+         width: 10%;
+     }
+
+     .carousel-indicators [data-bs-target] {
+         text-indent: 0;
+         height: 10px;
+         width: 10px;
+         margin: 5px;
+         border-radius: 50%;
+         background-color: rgba(0, 0, 0, 0.194);
+     }
+
+     .carousel-indicators [data-bs-target]:hover {
+         background-color: #1c1c1c;
+     }
+ }
+
+ /* -------------------------------------------counter------------------------------------------- */
+ #counter {
+     .counter-me {
+         font-weight: 900;
+     }
+ }
+
+ /* --------------------------------------------------our---------------------------------------- */
+ #Our-Team {
+
+     background-color: #34343413;
+
+     .text-me {
+         position: relative;
+         z-index: 1;
+     }
+
+     .dote {
+         background-image: url(../img/dots.png);
+         width: 19%;
+         height: 20px;
+         position: absolute;
+         right: 41%;
+         bottom: 47px;
+         z-index: -1;
+     }
+
+     h3 {
+         font-size: 45px;
+     }
+
+
+
+     .over-me2 {
+         position: relative;
+         z-index: 1;
+     }
+
+     .over-me {
+         background-color: rgb(255, 255, 255);
+         opacity: 0;
+         position: absolute;
+         top: 5px;
+         right: 5px;
+         left: 5px;
+         bottom: 5px;
+         transition: all .5s;
+         transform: scale(.5)rotateY(180deg);
+     }
+
+     .text-me2 {
+         background-color: #343434ce;
+     }
+
+     .card:hover img {
+         transform: scale(1.2);
+
+     }
+
+     .card:hover .over-me {
+         opacity: 0.92;
+         bottom: 6px;
+         transform: rotate(360deg) scale(1);
+
+     }
+
+     img {
+         transition: all .5s;
+     }
+
+
+     .icon5 {
+         width: 40px;
+         height: 40px;
+         background-color: rgb(0, 0, 0);
+         color: white;
+         transition: all .3s;
+         font-size: 20px;
+     }
+
+     .icon5:hover {
+         width: 40px;
+         height: 40px;
+         background-color: white;
+         color: black;
+         border: 1px solid black;
+         font-size: 20px;
+     }
+
+
+
+
+
+
+
+
+ }
+
+
+ /* --------------------------------------------------contact-us------------------------------- */
+ #Contact-Us {
+     .text-me {
+         position: relative;
+         z-index: 1;
+     }
+
+     .dote {
+         background-image: url(../img/dots.png);
+         width: 19%;
+         height: 20px;
+         position: absolute;
+         right: 41%;
+         bottom: 47px;
+         z-index: -1;
+     }
+
+     h3 {
+         font-size: 50px;
+     }
+
+     .icon5 {
+         width: 60px;
+         height: 60px;
+         background-color: rgba(0, 0, 0, 0.071);
+
+     }
+
+     .col-md-4:hover .icon5 {
+         width: 60px;
+         height: 60px;
+         background-color: rgb(0, 0, 0);
+         color: white;
+         transition: all 0.5s;
+
+
+
+         .containar-me {
+             width: 70%;
+             margin: auto;
+         }
+
+
+
+
+
+     }
+
+     .butto-me {
+         background-color: black;
+         color: white;
+     }
+
+     .butto-me:hover {
+         background-color: white;
+         color: black;
+     }
+
+     input {
+         width: 100%;
+         height: 40px;
+         border: 0px solid black;
+         padding-left: 10px;
+     }
+
+     input:focus {
+         outline: none;
+     }
+
+     textarea {
+         width: 100%;
+         padding-left: 10px;
+         height: 150px;
+         border: 0px solid black;
+     }
+
+     textarea:focus {
+         outline: none;
+     }
+
+ }
+
+
+ /* --------------------------------------------------footer------------------------------- */
+
+ footer {
+     height: 13%;
+     background-color: #1c1c1c;
+
+     p {
+         color: #748182;
+         font-size: 14px;
+
+     }
+ }
